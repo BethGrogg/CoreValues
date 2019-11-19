@@ -19,11 +19,78 @@
                 <div class="text-center">
                     
                     <form>
-                        Write a sentence that explains how Person 1 is valuable/influential in your life and others.
-                        <br>
-                        <input type="textarea" name="aboutperson"><br><br>
-                        <input onClick="this.select();" value="Sample Text" /><br>
-                    <input type="checkbox" name="test">test 2<br>    
+                        <div class="row">
+                        Write a sentence that explains how&nbsp; 
+                        <b><div id="test"></div></b>&nbsp;is valuable/influential in your life and others.
+                    </div>
+                    <div class="row">
+                        <input type="textarea" name="aboutperson">
+                    </div>
+                    <div class="row">
+                        Choose 5-10 words from the list below that describe Person 1.
+                    </div>
+                    <div class="row">
+                        <div class="col" align="left">
+                                <input type="checkbox" name="adventure">adventure<br>
+                                <input type="checkbox" name="advocacy">advocacy<br>
+                                <input type="checkbox" name="caring">caring<br>
+                                <input type="checkbox" name="collaboration">collaboration<br>
+                                <input type="checkbox" name="commitment">commitment<br>
+                                <input type="checkbox" name="community">community<br>
+                                <input type="checkbox" name="compassion">compassion<br>
+                                <input type="checkbox" name="confidence">confidence<br>
+                                <input type="checkbox" name="courage">courage<br>
+                                <input type="checkbox" name="creativity">creativity<br>
+                                <input type="checkbox" name="decisiveness">decisiveness<br>
+                                <input type="checkbox" name="dependability">dependability<br>
+                                <input type="checkbox" name="empathy">empathy<br>
+                        </div>
+                        <div class="col" align="left">        
+                                <input type="checkbox" name="enthusiasm">enthusiasm<br>
+                                <input type="checkbox" name="ethical">ethical<br> 
+                                <input type="checkbox" name="fairness">fairness<br>
+                                <input type="checkbox" name="faith">faith<br>
+                                <input type="checkbox" name="family">family<br>
+                                <input type="checkbox" name="friendliness">friendliness<br>
+                                <input type="checkbox" name="fun">fun<br> 
+                                <input type="checkbox" name="generosity">generosity<br>
+                                <input type="checkbox" name="grace">grace<br>
+                                <input type="checkbox" name="happiness">happiness<br>
+                                <input type="checkbox" name="health">health<br>
+                                <input type="checkbox" name="honesty">honesty<br>
+                                <input type="checkbox" name="humility">humility<br>
+                            </div>
+                            <div class="col" align="left">
+                                <input type="checkbox" name="humor">humor<br>
+                                <input type="checkbox" name="inclusiveness">inclusiveness<br>
+                                <input type="checkbox" name="integrity">integrity<br>
+                                <input type="checkbox" name="joy">joy<br>
+                                <input type="checkbox" name="justice">justice<br>
+                                <input type="checkbox" name="kindness">kindness<br>
+                                <input type="checkbox" name="leadership">leadership<br>
+                                <input type="checkbox" name="learning">learning<br>
+                                <input type="checkbox" name="love">love<br> 
+                                <input type="checkbox" name="loyalty">loyalty<br>
+                                <input type="checkbox" name="mindfulness">mindfulness<br>
+                                <input type="checkbox" name="optimism">optimism<br>
+                            </div>
+                            <div class="col" align="left">    
+                                <input type="checkbox" name="passion">passion<br>
+                                <input type="checkbox" name="perseverance">perseverance<br> 
+                                <input type="checkbox" name="proactive">proactive<br>
+                                <input type="checkbox" name="professionalism">professionalism<br>
+                                <input type="checkbox" name="respect">respect<br>
+                                <input type="checkbox" name="responsibility">responsibility<br>
+                                <input type="checkbox" name="risk-taking">risk-taking<br>
+                                <input type="checkbox" name="selflessness">selflessness<br>
+                                <input type="checkbox" name="service">service<br>
+                                <input type="checkbox" name="thoughtfulness">thoughtfulness<br>
+                                <input type="checkbox" name="trustworthiness">trustworthiness<br>
+                                <input type="checkbox" name="uniqueness">uniqueness<br>
+                        </div>
+                        
+                    </div>    
+                      
                       </form>
                 </div>
             </div>
@@ -34,6 +101,10 @@
 
     </body>
     <script>
-   
+       
+    
+        document.getElementById("test").innerHTML = 
+   localStorage.getItem("person1");
+
     </script>
 </html>

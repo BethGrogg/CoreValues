@@ -20,7 +20,7 @@
                     
                     <form>
                         Person 1:
-                        <input type="text" name="person1"><br><br>
+                        <input type="text" name="person1" id="person1"><br><br>
                         Person 2:
                         <input type="text" name="person2"><br><br>
                         Person 3:
@@ -29,7 +29,10 @@
                         <input type="text" name="person4"><br><br>
                         Person 5:
                         <input type="text" name="person5"><br><br>
-                        <input type="submit" value="Submit">
+
+                        <input type="submit" onclick="saveData()" value="Submit">
+                        
+
                       </form>
                 </div>
             </div>
@@ -37,6 +40,14 @@
                 
             </footer>
         </div>
+<script>
+    function saveData() {
+    var input = document.getElementById("person1");
+    localStorage.setItem("person1", input.value);
+    return true;
 
+    }
+    
+</script>
     </body>
 </html>
