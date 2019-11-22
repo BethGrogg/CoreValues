@@ -18,78 +18,86 @@
                 <br>
                 <div class="text-center">
                     
-                    <form>
+                    <form action="corevalueresults.html" method="post" onsubmit="coreresults(this)">
                         <div class="row">
                         Write a sentence that explains how&nbsp; 
                         <b><div id="test"></div></b>&nbsp;is valuable/influential in your life and others.
                     </div>
                     <div class="row">
-                        <input type="textarea" name="aboutperson">
+                        <div class="col" align="left">
+                            <textarea name="aboutperson" rows="4" cols="50"></textarea>
+                        </div>
                     </div>
                     <div class="row">
-                        Choose 5-10 words from the list below that describe Person 1.
+                        Choose 5-10 words from the list below that describe&nbsp; 
+                        <b><div id="test2"></div></b>.
                     </div>
                     <div class="row">
                         <div class="col" align="left">
-                                <input type="checkbox" name="adventure">adventure<br>
-                                <input type="checkbox" name="advocacy">advocacy<br>
-                                <input type="checkbox" name="caring">caring<br>
-                                <input type="checkbox" name="collaboration">collaboration<br>
-                                <input type="checkbox" name="commitment">commitment<br>
-                                <input type="checkbox" name="community">community<br>
-                                <input type="checkbox" name="compassion">compassion<br>
-                                <input type="checkbox" name="confidence">confidence<br>
-                                <input type="checkbox" name="courage">courage<br>
-                                <input type="checkbox" name="creativity">creativity<br>
-                                <input type="checkbox" name="decisiveness">decisiveness<br>
-                                <input type="checkbox" name="dependability">dependability<br>
-                                <input type="checkbox" name="empathy">empathy<br>
+                                <input type="checkbox" class="coreValue" name="adventure" id="adventure">adventure<br>
+                                <input type="checkbox" class="coreValue" name="advocacy" id="advocacy">advocacy<br>
+                                <input type="checkbox" class="coreValue" name="caring" id="caring">caring<br>
+                                <input type="checkbox" class="coreValue" name="collaboration" aria-invalid="collaboration">collaboration<br>
+                                <input type="checkbox" class="coreValue" name="commitment" id="commitment">commitment<br>
+                                <input type="checkbox" class="coreValue" name="community" id="community">community<br>
+                                <input type="checkbox" class="coreValue" name="compassion" id="compassion">compassion<br>
+                                <input type="checkbox" class="coreValue" name="confidence" id="confidence">confidence<br>
+                                <input type="checkbox" class="coreValue" name="courage" id="courage">courage<br>
+                                <input type="checkbox" class="coreValue" name="creativity" id="creativity">creativity<br>
+                                <input type="checkbox" class="coreValue" name="decisiveness" id="decisiveness">decisiveness<br>
+                                <input type="checkbox" class="coreValue" name="dependability" id="dependability">dependability<br>
+                                <input type="checkbox" class="coreValue" name="empathy" id="empathy">empathy<br>
                         </div>
                         <div class="col" align="left">        
-                                <input type="checkbox" name="enthusiasm">enthusiasm<br>
-                                <input type="checkbox" name="ethical">ethical<br> 
-                                <input type="checkbox" name="fairness">fairness<br>
-                                <input type="checkbox" name="faith">faith<br>
-                                <input type="checkbox" name="family">family<br>
-                                <input type="checkbox" name="friendliness">friendliness<br>
-                                <input type="checkbox" name="fun">fun<br> 
-                                <input type="checkbox" name="generosity">generosity<br>
-                                <input type="checkbox" name="grace">grace<br>
-                                <input type="checkbox" name="happiness">happiness<br>
-                                <input type="checkbox" name="health">health<br>
-                                <input type="checkbox" name="honesty">honesty<br>
-                                <input type="checkbox" name="humility">humility<br>
+                                <input type="checkbox" class="coreValue" name="enthusiasm" id="enthusiasm">enthusiasm<br>
+                                <input type="checkbox" class="coreValue" name="ethical" id="ethical">ethical<br> 
+                                <input type="checkbox" class="coreValue" name="fairness" id="fairness">fairness<br>
+                                <input type="checkbox" class="coreValue" name="faith" id="faith">faith<br>
+                                <input type="checkbox" class="coreValue" name="family" id="family">family<br>
+                                <input type="checkbox" class="coreValue" name="friendliness" id="friendliness">friendliness<br>
+                                <input type="checkbox" class="coreValue" name="fun" id="fun">fun<br> 
+                                <input type="checkbox" class="coreValue" name="generosity" id="generosity">generosity<br>
+                                <input type="checkbox" class="coreValue" name="grace" id="grace">grace<br>
+                                <input type="checkbox" class="coreValue" name="happiness" id="happiness">happiness<br>
+                                <input type="checkbox" class="coreValue" name="health" id="health">health<br>
+                                <input type="checkbox" class="coreValue" name="honesty" id="honesty">honesty<br>
+                                <input type="checkbox" class="coreValue" name="humility" id="humility">humility<br>
                             </div>
                             <div class="col" align="left">
-                                <input type="checkbox" name="humor">humor<br>
-                                <input type="checkbox" name="inclusiveness">inclusiveness<br>
-                                <input type="checkbox" name="integrity">integrity<br>
-                                <input type="checkbox" name="joy">joy<br>
-                                <input type="checkbox" name="justice">justice<br>
-                                <input type="checkbox" name="kindness">kindness<br>
-                                <input type="checkbox" name="leadership">leadership<br>
-                                <input type="checkbox" name="learning">learning<br>
-                                <input type="checkbox" name="love">love<br> 
-                                <input type="checkbox" name="loyalty">loyalty<br>
-                                <input type="checkbox" name="mindfulness">mindfulness<br>
-                                <input type="checkbox" name="optimism">optimism<br>
+                                <input type="checkbox" class="coreValue" name="humor" id="humor">humor<br>
+                                <input type="checkbox" class="coreValue" name="inclusiveness" id="inclusiveness">inclusiveness<br>
+                                <input type="checkbox" class="coreValue" name="integrity" id="integrity">integrity<br>
+                                <input type="checkbox" class="coreValue" name="joy" id="joy">joy<br>
+                                <input type="checkbox" class="coreValue" name="justice" id="justice">justice<br>
+                                <input type="checkbox" class="coreValue" name="kindness" id="kindness">kindness<br>
+                                <input type="checkbox" class="coreValue" name="leadership" id="leadership">leadership<br>
+                                <input type="checkbox" class="coreValue" name="learning" id="learning">learning<br>
+                                <input type="checkbox" class="coreValue" name="love" id="love">love<br> 
+                                <input type="checkbox" class="coreValue" name="loyalty" id="loyalty">loyalty<br>
+                                <input type="checkbox" class="coreValue" name="mindfulness" id="mindfulness">mindfulness<br>
+                                <input type="checkbox" class="coreValue" name="optimism" id="optimism">optimism<br>
                             </div>
                             <div class="col" align="left">    
-                                <input type="checkbox" name="passion">passion<br>
-                                <input type="checkbox" name="perseverance">perseverance<br> 
-                                <input type="checkbox" name="proactive">proactive<br>
-                                <input type="checkbox" name="professionalism">professionalism<br>
-                                <input type="checkbox" name="respect">respect<br>
-                                <input type="checkbox" name="responsibility">responsibility<br>
-                                <input type="checkbox" name="risk-taking">risk-taking<br>
-                                <input type="checkbox" name="selflessness">selflessness<br>
-                                <input type="checkbox" name="service">service<br>
-                                <input type="checkbox" name="thoughtfulness">thoughtfulness<br>
-                                <input type="checkbox" name="trustworthiness">trustworthiness<br>
-                                <input type="checkbox" name="uniqueness">uniqueness<br>
+                                <input type="checkbox" class="coreValue" name="passion" id="passion">passion<br>
+                                <input type="checkbox" class="coreValue" name="perseverance" id="perseverance">perseverance<br> 
+                                <input type="checkbox" class="coreValue" name="proactive" id="proactive">proactive<br>
+                                <input type="checkbox" class="coreValue" name="professionalism" id="professionalism">professionalism<br>
+                                <input type="checkbox" class="coreValue" name="respect" id="respect">respect<br>
+                                <input type="checkbox" class="coreValue" name="responsibility" id="responsibility">responsibility<br>
+                                <input type="checkbox" class="coreValue" name="risk-taking" id="risk-taking">risk-taking<br>
+                                <input type="checkbox" class="coreValue" name="selflessness" id="selflessness">selflessness<br>
+                                <input type="checkbox" class="coreValue" name="service" id="service">service<br>
+                                <input type="checkbox" class="coreValue" name="thoughtfulness" id="thoughtfulness">thoughtfulness<br>
+                                <input type="checkbox" class="coreValue" name="trustworthiness" id="trustworthiness">trustworthiness<br>
+                                <input type="checkbox" class="coreValue" name="uniqueness" id="uniqueness">uniqueness<br>
                         </div>
                         
-                    </div>    
+                    </div> 
+                    <div class="row">
+                        <div class="col" align="center">
+                            <input type="submit" onclick="saveData()" value="Submit">
+                        </div>    
+                    </div>   
                       
                       </form>
                 </div>
@@ -105,6 +113,19 @@
     
         document.getElementById("test").innerHTML = 
    localStorage.getItem("person1");
+   document.getElementById("test2").innerHTML = 
+   localStorage.getItem("person1");
+
+
+   $('.coreValue').on('click', function() {
+    var coreVal, coreValues = [];
+    $('.coreValue').each(function() { // run through each of the checkboxes
+        coreVal = {id: $(this).attr('id'), value: $(this).prop('checked')};
+        coreValues.push(coreVal);
+    });
+    localStorage.setItem("coreValues", JSON.stringify(coreValues));
+   
+});
 
     </script>
 </html>
